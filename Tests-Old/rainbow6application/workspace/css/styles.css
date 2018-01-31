@@ -1,0 +1,188 @@
+/* =========================== Global Styles ============================ */
+
+* {
+  font-family: 'Oswald', sans-serif !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+}
+
+html {
+  height:100vh;
+}
+
+body {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%) no-repeat center center fixed;
+  height:100vh;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+a{
+  color:white;
+  text-decoration: none !important;
+}
+
+p{
+  color:white;
+}
+
+h1{
+  color: white;
+}
+
+/* =========================== Nav Bar ============================= */
+
+
+hr {
+    width: 45%;
+    border-color: #E3E3E3;
+}
+
+/* =========================== Current Style ============================= */
+
+.current {
+    color: white;
+}
+
+/* =========================== ID Styles ============================= */
+
+#headerMain {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 45%;
+    padding-top: 2%;
+    color:white;
+}
+
+
+/* -- Modal CSS -- */
+#signupbtn{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#inputName{
+    margin-top: 10px;
+}
+
+/* =========================== Modal Styles ============================= */
+
+#myModal{
+   font-family: 'Raleway', sans-serif; 
+}
+
+.modal-content{
+    background-color:#efefef;
+}
+
+.btn1 {
+    padding: 10%;
+    color:blue;
+    
+}
+
+.homePageThumb{
+padding-top:30px;
+padding-left:30px;
+border-top-style: none;
+border-left-style: none;
+border-right-style: none;
+border-bottom-style: none;
+}
+
+/* =========================== Image Shadow ============================= */
+
+#shadow2{
+   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);  
+}
+
+/* =========================== Image Slide Animation ============================= */
+
+/* -- Shop page image montion down -- */
+.Selectionimagedown {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-down {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, #29323c 0%, #485563 100%);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay-down {
+  bottom: 0;
+  height: 100%;
+}
+
+.Selectiontext {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#Poswidth{
+   position: relative;
+    width: 90%; 
+    margin-top: 5%;
+}
+
+
+/* -- Shop page image motion left -- */
+.Selectionimageleft {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+background-image: linear-gradient(90deg, #29323c 0%, #485563 100%);  overflow: hidden;
+  width:0;
+  height:100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay-left {
+  width: 100%;
+}
+
+
+
+/* -- Shop page right -- */
+.Selectionimageright {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-right {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+background-image: linear-gradient(270deg, #29323c 0%, #485563 100%);  overflow: hidden;
+  width:0;
+  height:100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay-right {
+  width: 100%;
+  left: 0;
+}

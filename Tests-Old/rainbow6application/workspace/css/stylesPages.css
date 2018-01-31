@@ -1,0 +1,57 @@
+/* =========================== Global Styles ============================ */
+
+* {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/* ============================= ID Styles ============================== */
+
+#headerOne {
+    color: white;
+    font-size: 50px;
+    padding-top: 2%;
+}
+
+#thumbText {
+    color: black;
+}
+
+#MapsTitle{
+    color: white;
+    font-size: 50px;
+    padding-top: 2%;
+    
+}
+
+#MapImage{
+margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 7%;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3); 
+}
+
+#modalText {
+    color: black;
+    font-size: 20px;
+}
+
+#modalHead {
+    font-size: 30px;
+    color: black;
+}
+
+#hrWep {
+    border-color: black;
+    width: 100%;
+}
+
+#statHead {
+    font-size: 35px;
+}
+
+#Imagecenter{
+    display: block;
+    margin:auto
+}
+
+/* =========================== Class Styles ============================= */

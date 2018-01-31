@@ -1,0 +1,29 @@
+/* =========================== Global Styles ============================ */
+
+* {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/* =========================== Maps Navigation Bar ============================ */
+
+
+.current {
+    color: white;
+}
+
+
+#MapsHr {
+    width: 70%;
+    border-color: #E3E3E3;
+}
+
+
+/* =========================== Map Thumbnails ============================ */
+.centerText {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
