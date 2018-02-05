@@ -11,13 +11,18 @@ padding:0;
 margin:0;
 }
 
-@keyframes fadein {
+@keyframes fadein100 {
     0% { opacity: 0; }
     100%   { opacity: 1; }
 }
-@keyframes fadein1 {
+@keyframes fadein50 {
   0% { opacity: 0; }
   50% { opacity: 0; }
+  100%   { opacity: 1; }
+}
+@keyframes fadein75 {
+  0% { opacity: 0; }
+  75% { opacity: 0; }
   100%   { opacity: 1; }
 }
 .myCanvas {
@@ -28,12 +33,13 @@ text-align: center;
 box-shadow: 5px 5px 15px grey;
 }
 
+
 .PageTitleHello{
--webkit-animation: fadein 2s; /* Safari, Chrome and Opera */
--moz-animation: fadein 2s; /* Firefox */
--ms-animation: fadein 2s; /* Internet Explorer */
--o-animation: fadein 2s; /* Opera */
-animation: fadein 2s;
+-webkit-animation: fadein100 2s; /* Safari, Chrome and Opera */
+-moz-animation: fadein100 2s; /* Firefox */
+-ms-animation: fadein100 2s; /* Internet Explorer */
+-o-animation: fadein100 2s; /* Opera */
+animation: fadein100 2s;
 color:white;
 font-family: 'Montserrat', sans-serif;
 font-size: 200px;
@@ -41,36 +47,43 @@ text-align: right;
 padding:0;
 margin:0;
 margin-right: 10%;
-margin-top: 10%;
+margin-top: 5%;
 }
 
 .PageTitleWelcome{
--webkit-animation: fadein1 2s; /* Safari, Chrome and Opera */
--moz-animation: fadein1 2s; /* Firefox */
--ms-animation: fadein1 2s; /* Internet Explorer */
--o-animation: fadein1 2s; /* Opera */
-animation: fadein1 2s;
+-webkit-animation: fadein50 2s; /* Safari, Chrome and Opera */
+-moz-animation: fadein50 2s; /* Firefox */
+-ms-animation: fadein50 2s; /* Internet Explorer */
+-o-animation: fadein50 2s; /* Opera */
+animation: fadein50 2s;
 color:white;
 font-family: 'Montserrat', sans-serif;
 font-size: 200px;
 text-align: right;
 padding:0;
 margin:0;
-margin-right: 10%
+margin-right: 10%;
+margin-top:-5%;
 }
 
-.PagePara{
-  padding-left:30px;
-  padding-right:30px;
-  font-family: 'Didact Gothic', sans-serif;
-    font-size: 25px;
-    text-align: center;
+.PageDC{
+-webkit-animation: fadein75 2s; /* Safari, Chrome and Opera */
+-moz-animation: fadein75 2s; /* Firefox */
+-ms-animation: fadein75 2s; /* Internet Explorer */
+-o-animation: fadein75 2s; /* Opera */
+animation: fadein75 2s;
+color:white;
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+text-align: right;
+padding:0;
+margin:0;
+margin-right: 12%;
 }
 
-.PageInstructions{
-  padding-left:30px;
-  padding-right:30px;
-  font-family: 'Didact Gothic', sans-serif;
-    font-size: 35px;
-    text-align: center;
+.PageUnderline{
+  margin: 0;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
