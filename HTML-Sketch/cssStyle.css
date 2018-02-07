@@ -25,6 +25,7 @@ margin-top: 25px;
 }
 
 
+
 .PageTitleHello{
 -webkit-animation: fadein100 2s; /* Safari, Chrome and Opera */
 -moz-animation: fadein100 2s; /* Firefox */
@@ -72,11 +73,40 @@ margin:0;
 margin-right: 12%;
 }
 
-
-
 .PageUnderline{
   margin: 0;
   padding: 0;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.outerContainer{
+  margin: auto;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 30%;
+  background-color: white;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contentContainer{
+  margin: 0;
+  padding: 0;
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#slide1{
+background-image: url(images/FillerTest.png);
+}
+
+#slide2{
+background-image: url(images/FillerTest.png);
+}
+
+#slide3{
+background-image: url(images/FillerTest.png);
 }
