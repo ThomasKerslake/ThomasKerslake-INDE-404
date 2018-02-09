@@ -40,6 +40,7 @@ padding:0;
 margin:0;
 margin-right: 10%;
 margin-top: 5%;
+z-index: 950;
 }
 
 .PageTitleWelcome{
@@ -97,16 +98,4 @@ margin-right: 12%;
   margin-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-#slide1{
-background-image: url(images/FillerTest.png);
-}
-
-#slide2{
-background-image: url(images/FillerTest.png);
-}
-
-#slide3{
-background-image: url(images/FillerTest.png);
 }

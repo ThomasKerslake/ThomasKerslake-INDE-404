@@ -24,3 +24,20 @@ function clock(){
   	  document.getElementById("myClock").innerHTML=hour+":"+min+":"+sec;
 
 }
+
+//var altFrequency = 3000; // expressed in miliseconds
+//var altInterval = 0;
+
+// STARTS and Resets the loop if any
+//function startLoop() {
+//    altInterval = setInterval( "textGen()", altFrequency );  // run
+//}
+
+
+//function textGen(){
+//  var z = (Math.random() * newText.length) | 0;
+//  targetText.innerText = newText[z];
+//}
+
+//var targetText = document.getElementById('targetText');
+//var newText = ['ZSFZ','EEGF','YXSF','SCSF','EFGQ','HASD','EFTX','VEXT'];
