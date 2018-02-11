@@ -79,6 +79,7 @@ margin-right: 12%;
   padding: 0;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 4%;
 }
 
 .outerContainer{
@@ -86,7 +87,6 @@ margin-right: 12%;
   padding: 0;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 5%;
   margin-bottom: 1%;
   background-color: white;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
