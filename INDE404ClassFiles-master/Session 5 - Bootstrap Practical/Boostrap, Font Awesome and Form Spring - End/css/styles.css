@@ -1,0 +1,15 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Anton', sans-serif;
+}
+
+.carousel-caption{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.aboutUsSection{
+  background-color: #ccc;
+}
