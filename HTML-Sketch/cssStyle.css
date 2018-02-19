@@ -9,6 +9,40 @@ body {
   margin-top: 25px;
 }
 
+#nav {
+width:750px;
+margin:0 auto;
+list-style:none;
+}
+#nav li {
+float:left;
+}
+#nav a {
+display:block;
+text-align:center;
+width:150px; /* fixed width */
+text-decoration:none;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;border:0;
+    height:50px;
+    width:100px;
+    color:black;
+    padding: 10px 10px;
+}
+
+.shadow{
+    box-shadow:
+        inset 1px 1px 2px 2px #424242,
+        inset 0 0 13px 0 #424242;
+}
+
 @keyframes fadein100 {
     0% { opacity: 0; }
     100%   { opacity: 1; }
@@ -103,6 +137,7 @@ body {
 .outerContainer{
   margin: auto;
   padding: 0;
+  margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 1%;
