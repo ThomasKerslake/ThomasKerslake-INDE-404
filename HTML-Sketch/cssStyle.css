@@ -9,33 +9,92 @@ body {
   margin-top: 25px;
 }
 
-#nav {
-width:750px;
-margin:0 auto;
-list-style:none;
+/* Navigation bar */
+#navBg{
+
+    width:80%;
+    height:50px;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
 }
-#nav li {
-float:left;
-}
-#nav a {
-display:block;
-text-align:center;
-width:150px; /* fixed width */
-text-decoration:none;
+#navContainer {
+    text-align: center;
 }
 
-button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;border:0;
-    height:50px;
-    width:100px;
-    color:black;
-    padding: 10px 10px;
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
 }
+
+ul span{
+  color: white;
+  font-size: 30px;
+  cursor: default;
+}
+
+li {
+    display:inline-block;
+    vertical-align: top;
+    margin-right:1px;
+    margin-left:1px;
+}
+
+li a {
+    display:block;
+    min-width:140px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    text-decoration:none !important;
+    font-size: 30px;
+}
+
+li a:hover {
+    color:black;
+}
+
+li ul {
+    position: absolute;
+    display:none
+}
+
+li ul li {
+    display:block;
+}
+
+li ul li a {
+    width:auto;
+    min-width:100px;
+    padding:0 20px
+}
+
+.show-drop {
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none !important;
+    color:#fff;
+    background:#45494f;
+    text-align:center;
+    padding:16px 0;
+    display:none;
+    width:100%!important
+}
+
+/*Hide checkbox*/
+input[type=checkbox] {
+    display:none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu {
+    display:block;
+    margin:0 auto;
+}
+/* End of Navigation bar */
+
 
 .shadow{
     box-shadow:
@@ -85,15 +144,16 @@ button {
 
 #THover{
   color:white;
-  -webkit-transition:.2s;
-  -o-transition:.2s;
-  -moz-transition:.2s;
-  -ms-transition:.2s;
-  transition:.2s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  -moz-transition:.5s;
+  -ms-transition:.5s;
+  transition:.5s;
 }
 
 #THover:hover{
   color: #45494f;
+  font-size: 300px;
 }
 
 
@@ -106,21 +166,31 @@ button {
   margin:0;
   margin-left: 10%;
   margin-top: -1%;
+  cursor: default;
 }
 
-.PageDC{
+#myDate{
   -webkit-animation: fadein75 2s; /* Safari, Chrome and Opera */
   -moz-animation: fadein75 2s; /* Firefox */
   -ms-animation: fadein75 2s; /* Internet Explorer */
   -o-animation: fadein75 2s; /* Opera */
   animation: fadein75 2s;
   color:white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  text-align: right;
-  padding:0;
-  margin:0;
-  margin-right: 12%;
+  font-family: 'Jura', sans-serif;
+  font-size: 35px;
+  margin-top:-2%;
+}
+
+#myClock{
+  -webkit-animation: fadein75 2s; /* Safari, Chrome and Opera */
+  -moz-animation: fadein75 2s; /* Firefox */
+  -ms-animation: fadein75 2s; /* Internet Explorer */
+  -o-animation: fadein75 2s; /* Opera */
+  animation: fadein75 2s;
+  color:white;
+  font-family: 'Jura', sans-serif;
+  font-size: 35px;
+  margin-right: 10%;
 }
 
 .PageUnderline{
@@ -132,6 +202,19 @@ button {
   color:#45494f;
   border: 0 none;
   margin-bottom:2%;
+}
+
+.outerContainerInfo{
+  position: relative;
+  margin: auto;
+  padding: 0;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  background-color: white;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
 .outerContainer{
@@ -151,4 +234,53 @@ button {
   margin-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+
+
+
+/* Start of media queries */
+@media screen and (max-width : 800px) {
+
+    .PageTitle{
+      font-size: 100px;
+    }
+
+    #myDate{
+      font-size: 25px;
+    }
+
+    #myClock{
+      font-size: 25px;
+    }
+
+    #THover:hover{
+      font-size: 130px;
+    }
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position:static;
+        display:none;
+        white-space: initial;
+    }
+
+    ul span{
+      display: none;
+    }
+
+    li a {
+        background-color:#45494f;
+        border-top: 1px solid white;
+    }
+
+    /*Make all menu links full width*/
+    ul li,li a {
+        width:100%
+    }
+
+    /*Display 'show menu' link*/
+    .show-drop {
+        display:block
+    }
 }

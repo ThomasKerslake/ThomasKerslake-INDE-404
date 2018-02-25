@@ -20,7 +20,7 @@ function clock(){
       var min = i.getMinutes();
   	  var sec = i.getSeconds();
 
-  	  document.getElementById("myDate").innerHTML=day+" "+date+" "+month+" "+year;
+  	  document.getElementById("myDate").innerHTML=day+" "+date+" "+month+" "+year + " | ";
   	  document.getElementById("myClock").innerHTML=hour+":"+min+":"+sec;
 
 }
