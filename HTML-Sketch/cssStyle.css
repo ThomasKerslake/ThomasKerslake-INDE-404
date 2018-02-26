@@ -17,7 +17,7 @@ h1{
 p{
 font-family: 'Questrial', sans-serif !important;
 font-size: 18px;
-
+color: black;
 }
 
 img{
@@ -26,12 +26,9 @@ img{
   transform: translateZ(50px);
 }
 
-#instafeed img{
-  width: 100%;
-  height: 75%;
-}
 
-/* Navigation bar */
+
+/* --------- Start of navigation bar --------- */
 #navBg{
     width:80%;
     height:50px;
@@ -115,14 +112,10 @@ input[type=checkbox]:checked ~ #menu {
     display:block;
     margin:0 auto;
 }
-/* End of Navigation bar */
+/* --------- End of navigation bar --------- */
 
 
-.shadow{
-    box-shadow:
-        inset 1px 1px 2px 2px #424242,
-        inset 0 0 13px 0 #424242;
-}
+/* --------- All fade in animations --------- */
 
 @keyframes fadein100 {
     0% { opacity: 0; }
@@ -139,10 +132,8 @@ input[type=checkbox]:checked ~ #menu {
   100%   { opacity: 1; }
 }
 
-.likes i{
-  color: #E80C7A;
-  padding-right: 5px;
-}
+
+/* --------- All custom ID's --------- */
 
 #fadein100{
   -webkit-animation: fadein100 2s; /* Safari, Chrome and Opera */
@@ -220,6 +211,17 @@ transform: translateZ(50px);
   margin-right: 10%;
 }
 
+#pTextAlign{
+  text-align:center;
+}
+
+#instafeed img{
+  width: 100%;
+  height: 75%;
+}
+
+/* --------- All custom classes --------- */
+
 .PageTitle{
   color:white;
   font-family: 'Montserrat', sans-serif !important;
@@ -242,6 +244,12 @@ transform: translateZ(50px);
   color:#45494f;
   border: 0 none;
   margin-bottom:2%;
+}
+
+.shadow{
+    box-shadow:
+        inset 1px 1px 2px 2px #424242,
+        inset 0 0 13px 0 #424242;
 }
 
 .sectionTitle{
@@ -335,13 +343,64 @@ transform: translateZ(50px);
   margin-right: 5%;
 }
 
+.likes i{
+  color: #f42458;
+  padding-right: 5px;
+}
+
+
+
+/* --------- Start of media queries --------- */
+
+@media (min-width: 2880px) {
+  p{
+    font-size: 24px;
+  }
+
+  li a{
+    font-size: 50px;
+  }
+
+  ul span{
+    font-size: 30px;
+    color: black;
+  }
+
+  .PageTitle{
+    font-size: 350px;
+  }
+
+  #THover:hover{
+    font-size: 450px;
+  }
+
+  #myDate{
+    font-size: 45px;
+  }
+
+  #myClock{
+    font-size: 45px;
+  }
+
+
+}
+
+
 @media (max-width: 1026px) {
   .contentContainer{
     margin-left: 0;
   }
+
+  .PageTitle{
+    font-size: 120px;
+  }
+
+  #THover:hover{
+    font-size: 160px;
+  }
+
 }
 
-/* Start of media queries */
 @media screen and (max-width : 800px) {
 
     .PageTitle{

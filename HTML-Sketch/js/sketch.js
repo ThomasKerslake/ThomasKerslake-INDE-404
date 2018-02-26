@@ -1,12 +1,13 @@
-var feed = new Instafeed({
+var feed = new Instafeed({ // Creating an instafeed
   get: 'user',
-  userId: '7097454956',
-  accessToken: '7097454956.1677ed0.3e8d014c38b047a996dd1c298258e46b',
-  resolution: 'standard_resolution',
-  template: '<div class="col-sm-4"><img src={{image}}><hr><p class="likes"><i class="fa fa-heart"></i>{{likes}} </div>'
+  userId: '7097454956', // My instagram user ID
+  accessToken: '7097454956.1677ed0.3e8d014c38b047a996dd1c298258e46b', // My instagram access token
+  resolution: 'standard_resolution', // Setting the resolution for the instagram images to be 612x612
+  // Using 'template' to set up how I want the instagram images to be displayed on my page
+  template: '<div class="col-sm-4"><a href="{{link}}"><img src={{image}}></a><hr><p class="likes"><i class="fab fa-instagram"></i><i class="fa fa-heart"></i>{{likes}}</div>'
 });
 
-feed.run();
+feed.run(); // Running the instafeed to collect the images and display them on my site
 
 
 // On loading the page start function 'clock' with an interval of 1000ms
@@ -35,23 +36,16 @@ function clock(){
   	  document.getElementById("myClock").innerHTML=hour +":"+ min +":"+ sec; // Assigns the collective values to an ID to be used within HTML/CSS
 
 }
-///**************************************************************************
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+  $("a").on('click', function(event) {// Adds a smooth scroll affect to 'a' tags (links)
+    if (this.hash !== "") {// Sets this.hash to have a value equal to nothing
+      event.preventDefault()// Stops the default behavior or links
+      var hash = this.hash;// Creates a variable called hash to store this.hash
+      $('html, body').animate({ // 'animate' sets up the smooth scroll
         scrollTop: $(hash).offset().top
-      }, 600, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+      }, 600, function(){ // '600' is the number of ms it will take to move to the hash
+        window.location.hash = hash; // Adds a '#' to your URL at the end of the animation
       });
     } // End of the if statement
   });
