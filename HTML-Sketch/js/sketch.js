@@ -1,3 +1,14 @@
+var feed = new Instafeed({
+  get: 'user',
+  userId: '7097454956',
+  accessToken: '7097454956.1677ed0.3e8d014c38b047a996dd1c298258e46b',
+  resolution: 'standard_resolution',
+  template: '<div class="col-sm-4"><img src={{image}}><hr><p class="likes"><i class="fa fa-heart"></i>{{likes}} </div>'
+});
+
+feed.run();
+
+
 // On loading the page start function 'clock' with an interval of 1000ms
 window.onload = setInterval(clock,1000);
 

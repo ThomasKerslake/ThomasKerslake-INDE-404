@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Kerslake designs</title>
   <link rel="stylesheet" type="text/css" href="cssStyle.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Jura|Raleway|Questrial" rel="stylesheet">
@@ -13,9 +14,9 @@
 
 <body>
 
-  <h1 id="fadein100" class="PageTitle">Hello<span style="color: #45494f; font-size:100px;">,</span></h1>
+  <h1 id="fadein100" class="PageTitle">Hello<span id="spanColour100">,</span></h1>
   <h1 id="fadein50" class="PageTitle">my name is</h1>
-  <h1 id="fadein75" class="PageTitle"><span id="THover">T</span><span id="THover">h</span><span id="THover">o</span><span id="THover">m</span><span id="THover">a</span><span id="THover">s</span><span style="color: #45494f; font-size:100px;">.</span></h1>
+  <h1 id="fadein75" class="PageTitle"><span id="THover">T</span><span id="THover">h</span><span id="THover">o</span><span id="THover">m</span><span id="THover">a</span><span id="THover">s</span><span id="spanColour100">.</span></h1>
   <div style="text-align: right;">
     <span id="myDate"></span>
     <span id="myClock"></span>
@@ -30,7 +31,7 @@
         <li><a href="#aboutSection">About</a></li>
         <span>|</span>
         <li><a href="#portfolioSection">Portfolio</a></li>
-        <span>|</span>
+        <span> | </span>
         <li><a href="#instagramSection">Instagram</a></li>
       </ul>
     </div>
@@ -63,7 +64,7 @@
           </div>
         </div>
 
-        <h1 class="sectionTitle" id="portfolioSection">My work<span style="color: #45494f; font-size:50px;">.</span></h1>
+        <h1 class="sectionTitle" id="portfolioSection">My work<span id="spanColour50">.</span></h1>
         <hr  class="sectionUnderline">
 
         <div data-tilt class="outerContainer">
@@ -100,6 +101,9 @@
                 </div>
               </div>
 
+              <h1 class="sectionTitle" id="portfolioSection">More<span id="spanColour50">.</span><span id="spanColour50">.</span><span id="spanColour50">.</span></h1>
+              <hr  class="sectionUnderline">
+
               <div data-tilt class="outerContainer">
                 <div class="contentContainer">
                   <div class="container">
@@ -126,8 +130,30 @@
                       </div>
                     </div>
 
-              <script src="sketch.js" type="text/javascript"></script>
-              <script type="text/javascript" src="vanilla-tilt.js"></script>
+                    <h1 class="sectionTitle" id="instagramSection">Instagram<span id="spanColour50">.</span></h1>
+                    <hr  class="sectionUnderline">
+
+                    <div data-tilt class="outerContainer">
+                      <div class="contentContainer">
+                        <div class="container">
+                            <div class="col-sm-12">
+                              <h1 class="sectionSubTitle">My Instagram</h1>
+                              <hr  class="subTitleUnderLine">
+                              <p></p>
+                              </div>
+                                    <div id="instafeed" id="myTransform" class="row"></div>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+
+
+
+              <script src="js/instafeed.min.js" type="text/javascript"></script>
+              <script src="js/sketch.js" type="text/javascript"></script>
+              <script src="js/vanilla-tilt.js" type="text/javascript"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             </body>
